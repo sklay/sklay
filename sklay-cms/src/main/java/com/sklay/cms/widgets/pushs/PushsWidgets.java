@@ -117,7 +117,7 @@ public class PushsWidgets {
 					@NameAndValue(name = "图片列表轮播(仅显示分类下拥有图片的文章)", value = "listImageSlider"),
 					@NameAndValue(name = "图片瀑布流列表(仅显示分类下拥有图片的文章)", value = "listImagesWaterwall"),
 					@NameAndValue(name = "图片TAB页(仅显示分类下拥有图片的文章)", value = "tabImages"),
-					@NameAndValue(name = "普通TAB页", value = "tabNormal"), }),
+					@NameAndValue(name = "普通TAB页", value = "tabNormal") }),
 			@Setting(key = "options", name = "轮播JS初始化选项", value = "{controlNav:false}", inputType = InputType.TEXTAREA),
 			@Setting(key = "themes", name = "轮播主题", optionsLoader = "findThemeTypes", value = "default", inputType = InputType.SELECT),
 			@Setting(key = "commentSize", name = "评论数", value = "10", inputType = InputType.INPUT) })
