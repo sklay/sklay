@@ -25,15 +25,13 @@ public class LoginUserHelper {
 	public void init(UserService userService) {
 		LoginUserHelper.userService = userService;
 	}
-	
-	public static Long getLoginUserId(){
+
+	public static Long getLoginUserId() {
 		Subject currentUser = SecurityUtils.getSubject();
-		if(currentUser!=null){
-			return (Long) currentUser.getPrincipal();
-		}
-		return null;
+		User user = (User) currentUser.getPrincipal();
+		return user == null ? null : user.getId();
 	}
-	
+
 	public static User getLoginUser() {
 		Long userId = getLoginUserId();
 		return userId == null ? null : userService.getUser(userId);

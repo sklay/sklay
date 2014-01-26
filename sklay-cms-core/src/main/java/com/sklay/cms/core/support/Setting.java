@@ -9,7 +9,9 @@ public class Setting {
 	private String key;
 	
 	private String value;
-
+	
+	private String name;
+	
 	private Option[] options;
 	
 	private Method optionsLoader;
@@ -54,6 +56,14 @@ public class Setting {
 
 	public void setOptionsLoader(Method optionsLoader) {
 		this.optionsLoader = optionsLoader;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
